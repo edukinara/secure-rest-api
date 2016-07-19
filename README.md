@@ -1,5 +1,4 @@
-# secure-rest-api
-Secure MEAN Restful API
+# Secure MEAN Restful API
 
 #### Install and start
 Install [MongoDB](https://www.mongodb.com/)
