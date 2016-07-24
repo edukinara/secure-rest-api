@@ -1,5 +1,6 @@
 var express     = require('express');
 var app         = express();
+var cors	= require('cors');
 var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
 var mongoose    = require('mongoose');
@@ -12,6 +13,9 @@ var jwt         = require('jwt-simple');
 // get our request parameters
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Enable All CORS Requests
+app.use(cors());
  
 // log to console
 app.use(morgan('dev'));
